@@ -10,6 +10,7 @@
 /* Base */
 body {
   color: var(--primary-color-dark);
+  font-family: 'Poppins', sans-serif;
 }
 ul {
   list-style-type: none;
