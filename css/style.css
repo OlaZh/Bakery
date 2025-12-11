@@ -1,3 +1,32 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/poppins-v24-latin-300.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/poppins-v24-latin-regular.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/poppins-v24-latin-600.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/poppins-v24-latin-900.woff2') format('woff2');
+}
+
 :root {
   --primary-color-light: #faf4ea;
   --primary-color-dark: #31261a;
@@ -8,12 +37,28 @@
 }
 
 /* Base */
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   color: var(--primary-color-dark);
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
 }
 
 adress {
@@ -24,7 +69,15 @@ ul {
   list-style-type: none;
 }
 
+.contener {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
 /* Link */
+
 .link {
   color: var(--primary-color-light);
   text-decoration: none;
@@ -37,6 +90,7 @@ ul {
 
 /* Button */
 .button {
+  padding: 16px 32px;
   color: var(--primary-color-light);
   background-color: var(--primary-color-green);
   border: 2px solid var(--primary-color-green);
@@ -50,10 +104,14 @@ ul {
   color: var(--secondaty-color-green);
 }
 
+.section {
+  padding: 48px 0;
+}
+
 .section-title {
   font-size: 64px;
   font-weight: 900;
-  line-height: 1, 3;
+  line-height: 1.3;
 }
 
 .section-title .accent {
@@ -61,7 +119,10 @@ ul {
 }
 
 /* Hero section */
+
 .hero-title {
+  padding: 272px 0;
+  margin-bottom: 0;
   color: var(--primary-color-light);
   text-align: center;
   font-size: 128px;
@@ -73,7 +134,17 @@ ul {
 
 /* Advantage section */
 
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 .advantage-list {
+  /* margin: 0; */
   background-color: var(--primary-color-green);
   color: var(--primary-color-light);
 }
@@ -85,6 +156,9 @@ ul {
 
 /* Tradition section */
 
+.tradition-title {
+  margin-bottom: 42px;
+}
 .tradition-text span {
   color: var(--primary-color-green);
 }
@@ -95,14 +169,22 @@ ul {
 
 /* Chefs section */
 
+.chef-title {
+  margin-bottom: 80px;
+}
+
 .chefs-title {
   font-size: 40px;
   font-weight: 600;
 }
 
 /* Format section */
-
 .format-title {
+  margin-bottom: 80px;
+}
+
+.formats-title {
+  margin-bottom: 16px;
   font-style: 24px;
   font-weight: 600;
   color: var(--primary-color-light);
@@ -116,6 +198,9 @@ ul {
 
 /* Contact section */
 
+.contakt-title {
+  margin-bottom: 16px;
+}
 .contakt-text {
   color: var(--secondaty-color-green);
 }
